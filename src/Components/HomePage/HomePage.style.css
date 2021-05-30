@@ -1,0 +1,45 @@
+
+.home-page{
+    background-color: var(--color-primary);
+    padding: var(--default-padding);
+}
+
+.home-content{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.home-slogant{
+    flex-basis: 55%;
+    align-self: center;
+}
+
+.home-slogant p {
+    margin-top: 5rem;
+    width: 60%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.home-image{
+    flex-basis: 45%;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.home-image img{
+    width: 70%;
+    height: 100%;
+
+}
+
+.slogant-heading {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 5rem;
+}

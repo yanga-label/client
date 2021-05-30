@@ -1,0 +1,48 @@
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 10rem;
+    display: flex;
+}
+.logo--image-box{
+    width: 8rem;
+    height: 4rem;
+}
+
+.logo--image{
+    width: 100%;
+    height: 100%;
+}
+
+.logo--title{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+}
+
+.logo--title__yanga{
+    font-weight: 400;
+}
+
+.logo--title__label{
+    font-weight: 700;
+}
+
+.logo-button-icon{
+    cursor: pointer;
+}
+
+.nav-list{
+    display: inline;
+}
+
+.nav-item{
+    display: inline-block;
+}
