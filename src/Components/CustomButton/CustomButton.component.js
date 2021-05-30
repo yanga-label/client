@@ -4,7 +4,8 @@ import "./CustomButton.style.css";
 
 const CustomButton = (props) => {
     return (
-        <button className="custom-button">
+        <button 
+            className={`custom-button  ${props.outlined}  ${props.over}`}>
             {props.children}
         </button>
     )

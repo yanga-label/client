@@ -1,12 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
-import Context from "../Context/Context";
+import Footer from "./Footer/Footer.component";
 import HomePage from "./HomePage/HomePage.component";
-// import CheckAuthorization from "./Utils/CheckAuthorization";
 
 
 const Routing = () => {
-  const { state } = useContext(Context);
   
   return (
     <BrowserRouter>
@@ -22,6 +20,7 @@ const Routing = () => {
         <Route component={ErrorComponent} />
         */}
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 };

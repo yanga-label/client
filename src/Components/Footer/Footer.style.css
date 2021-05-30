@@ -1,0 +1,14 @@
+
+.footer{
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo{
+    border: 1px solid var(--colot-white);
+    border-radius: 50%;
+}

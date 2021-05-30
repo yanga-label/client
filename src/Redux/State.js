@@ -1,7 +1,9 @@
-import { Items } from "./Items"; 
+import { Items } from "./Data/Items";
+import { Features } from "./Data/Features"; 
 
 const InitialState = {
-    items: Items
+    items: Items,
+    features: Features,
 }
 
 

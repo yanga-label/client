@@ -1,0 +1,29 @@
+
+.feature{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 20%;
+    border-right: 2px solid var(--color-black);
+}
+
+
+.feature--icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis:20%;
+}
+
+.feature--content{
+    flex-basis: 75%;
+    align-self: center;
+    justify-self: space-between;
+}
+
+.feature--content-title{
+    font-weight: 500;
+    font-size: 1.6rem;
+}
