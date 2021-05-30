@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import Context from "../../Context/Context";
 import Logo from "../../Assets/logo-croped.png";
-
+import Menu from "../Menu/Menu.component";
+import { TOGGLE_MENU } from "../../Redux/Types";
 import "./Navbar.style.css";
 
 const Navbar = () => {
-    const [isNavbarActive, setNavbarActive] = useState(false);
+    const { state, dispatch } = useContext(Context);
+    const isMenuOpen = state.isMenuOpen;
 
     return(
         <nav className="nav">
@@ -20,15 +23,10 @@ const Navbar = () => {
             <div className="logo-button">
                 <i 
                     className="fas fa-bars fa-3x logo-button-icon"
-                    onClick={() => setNavbarActive(!isNavbarActive)}
+                    onClick={() => dispatch({type: TOGGLE_MENU, payload: !isMenuOpen })}
                 ></i>
             </div>
-        {   isNavbarActive && <ul className="nav-list">
-                <li className="nav-item">Home</li>
-                <li className="nav-item">Shop</li>
-                <li className="nav-item">About</li>
-                <li className="nav-item">Contact</li>
-            </ul> }
+        {   isMenuOpen && <Menu />}
         </nav>
         )
 }

@@ -1,0 +1,57 @@
+@keyframes moveInRight{
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80%{
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.menu {
+    position: fixed;
+    bottom: 1rem;
+    right: 20rem;
+    background-color: white;
+    height: 58rem;
+    width: 35rem;
+    border: 1.5px solid var(--color-black);
+    border-radius: 1%;
+    box-shadow: var(--shadow-dark);
+    padding: 5rem;
+    z-index: 100;
+    animation: moveInRight .7s ease-out;
+    opacity: .95;
+}
+
+.menu i {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    color: var(--color-primary);
+}
+
+.nav-list{
+    display: inline;
+}
+
+.nav-item{
+    display: block;
+    margin: 3rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all .4s ease;
+}
+
+.nav-item:hover{
+    border-bottom: 2px solid var(--color-primary);
+}

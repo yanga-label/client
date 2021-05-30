@@ -6,6 +6,7 @@ const InitialState = {
     items: Items,
     features: Features,
     preview: Preview,
+    isMenuOpen: false,
 }
 
 

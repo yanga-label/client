@@ -13,10 +13,10 @@ const Footer = () => {
                 <img src={Logo} alt="footer logo" />
             </div>
             <div className="footer-content">
-                <i class="fab fa-facebook-f fa-2x"></i>
-                <i class="fab fa-instagram fa-2x"></i>
-                <i class="fab fa-twitter fa-2x"></i>
-                <i class="fab fa-whatsapp fa-2x"></i>
+                <i className="fab fa-facebook-f fa-2x"></i>
+                <i className="fab fa-instagram fa-2x"></i>
+                <i className="fab fa-twitter fa-2x"></i>
+                <i className="fab fa-whatsapp fa-2x"></i>
             </div>
         </footer>
     )
