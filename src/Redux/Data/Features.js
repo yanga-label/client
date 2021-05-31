@@ -5,18 +5,18 @@ export const Features = [
         text: "For 18 - 35 years old"
     },
     {
-        icon: <i class="fas fa-hands-wash fa-3x"></i>,
+        icon: <i className="fas fa-hands-wash fa-3x"></i>,
         title: "authenticity",
         text: ""
     },
     {
-        icon: <i class="far fa-handshake fa-3x"></i>,
+        icon: <i className="far fa-handshake fa-3x"></i>,
         title: "Loyaty",
         text: ""
     },
 
     {
-        icon: <i class="fas fa-globe-africa fa-3x"></i>,
+        icon: <i className="fas fa-globe-africa fa-3x"></i>,
         title: "Africans",
         text: ""
     },

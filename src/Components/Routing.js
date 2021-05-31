@@ -6,6 +6,7 @@ import Spinner from "./Spinner/Spinner.component";
 const HomePage = lazy(() => import("./HomePage/HomePage.component"));
 const About = lazy(() => import ("./About/About.component"));
 const ShopPage = lazy(() => import ("./ShopPage/ShopPage.component"));
+const Contact = lazy(() => import ("./Contact/Contact.component"));
 
 const Routing = () => {
   
@@ -16,6 +17,7 @@ const Routing = () => {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/shop" component={ShopPage} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
         </Suspense>
       </Switch>
       <Footer />

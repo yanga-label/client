@@ -21,6 +21,7 @@ const Menu = () => {
                     <li className="nav-item" onClick={() => HandlePageChane("/")}>Home</li>
                     <li className="nav-item" onClick={() => HandlePageChane("/shop")}>Shop</li>
                     <li className="nav-item" onClick={() => HandlePageChane("/about")}>About</li>
+                    <li className="nav-item" onClick={() => HandlePageChane("/contact")}>Contact</li>
             </ul> 
         </div>
     )

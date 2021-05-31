@@ -1,10 +1,10 @@
 
 .footer{
-    background-color: var(--color-black);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
+    background-color: var(--color-black) !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
     justify-content: space-between;
     padding: 0 20rem;
     color: var(--color-white);
@@ -26,7 +26,7 @@
 .footer-link{
     font-size: 2rem;
     font-weight: 700;
-    color: var(--color-white);
+    color: var(--color-white) !important;
     flex-basis:30%;
 }
 
