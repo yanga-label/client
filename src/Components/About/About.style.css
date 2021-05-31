@@ -1,0 +1,24 @@
+
+.about{
+    padding: var(--default-padding);
+    background-color: var(--color-primary);
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content-text{
+    flex-basis: 40%;
+} 
+
+.about-content-text p{
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+    line-height: 2;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+

@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar.component";
-
+import { useHistory } from "react-router-dom";
 // import HomeImage from "../../Assets/home-image.png";
 
 import "./HomePage.style.css";
@@ -9,9 +9,10 @@ import Items from "../Items/Items.component";
 import CustomButtonClassic from "../CustomButton/CustomButtonClassic";
 
 const HomePage = () => {
+    const history = useHistory();
     return(
         <div>
-            <div className="home-page">
+            <div id="home" className="home-page">
                 <Navbar />
 
                 <div className="home-content">
@@ -25,7 +26,9 @@ const HomePage = () => {
                         to respond to the humanitarian need. 
                         </p>
 
-                        <CustomButtonClassic>Explore {" "} &#8594;</CustomButtonClassic>
+                        <CustomButtonClassic
+                        onClick={() => history.push("/shop")}
+                        >Explore {" "} &#8594;</CustomButtonClassic>
                     </div>
 
                     <div className="home-image">
@@ -38,7 +41,9 @@ const HomePage = () => {
             </div>
             <Items quantity={10} preview/>
             <div className="center">
-                <CustomButtonClassic>Explore {" "} &#8594;</CustomButtonClassic>
+                <CustomButtonClassic
+                    onClick={() => history.push("/shop")}
+                    >Explore {" "} &#8594;</CustomButtonClassic>
             </div>
         </div>
         )

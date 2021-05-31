@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer">
 
             <div className="footer-link">
-                Yanga Label
+                <a href="#home">Yanga Label</a>
             </div>
             <div className="footer-logo">
                 <img src={Logo} alt="footer logo" />

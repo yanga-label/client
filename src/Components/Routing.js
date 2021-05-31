@@ -1,24 +1,22 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Footer from "./Footer/Footer.component";
-import HomePage from "./HomePage/HomePage.component";
+import Spinner from "./Spinner/Spinner.component";
 
+const HomePage = lazy(() => import("./HomePage/HomePage.component"));
+const About = lazy(() => import ("./About/About.component"));
+const ShopPage = lazy(() => import ("./ShopPage/ShopPage.component"));
 
 const Routing = () => {
   
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={HomePage} />
-        {/*
-        <CheckAuthorization
-            exact
-            path="/dashboard"
-            component={HomePage}
-            auth={state.checkAuth}
-        />
-        <Route component={ErrorComponent} />
-        */}
+        <Suspense fallback={<Spinner />}>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/shop" component={ShopPage} />
+          <Route exact path="/about" component={About} />
+        </Suspense>
       </Switch>
       <Footer />
     </BrowserRouter>

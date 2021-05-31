@@ -1,0 +1,8 @@
+
+.shop{
+    /* padding: var(--default-padding); */
+}
+
+.padding-default{
+    padding: var(--default-padding)
+}

@@ -1,20 +1,26 @@
 import React, { useContext } from "react";
+import { useHistory } from "react-router-dom";
 import Context from "../../Context/Context";
 import { TOGGLE_MENU } from "../../Redux/Types";
 import "./Menu.style.css";
 
 const Menu = () => {
-    const { state, dispatch } = useContext(Context);
-    const isMenuOpen = state.isMenuOpen;
+    const history = useHistory();
+    const { dispatch } = useContext(Context);
+
+    const HandlePageChane = (place) => {
+        dispatch({type: TOGGLE_MENU, payload: false})
+        history.push(place);
+    }
+
     return(
         <div className="menu">
             <i className="fas fa-times fa-3x"
                 onClick={() => dispatch({type: TOGGLE_MENU, payload: false})}></i>
             <ul className="nav-list">
-                    <li className="nav-item">Home</li>
-                    <li className="nav-item">Shop</li>
-                    <li className="nav-item">About</li>
-                    <li className="nav-item">Contact</li>
+                    <li className="nav-item" onClick={() => HandlePageChane("/")}>Home</li>
+                    <li className="nav-item" onClick={() => HandlePageChane("/shop")}>Shop</li>
+                    <li className="nav-item" onClick={() => HandlePageChane("/about")}>About</li>
             </ul> 
         </div>
     )
